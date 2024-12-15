@@ -1,0 +1,71 @@
+/* Latar belakang penuh layar */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(10, 10, 10, 1), rgba(0, 0, 0, 1));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Great Vibes', cursive;
+  color: aqua;
+}
+
+/* Kontainer halaman selamat datang */
+#welcome {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Memastikan kontainer memenuhi layar penuh */
+}
+
+/* Gaya teks selamat datang */
+#welcome h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 300; /* Font Latin tipis */
+  text-shadow: 0 0 10px aqua, 0 0 20px aqua;
+}
+
+/* Gaya tombol neon */
+button#start-btn {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.5rem; /* Ukuran font */
+  color: aqua; /* Warna font */
+  text-shadow: 0 0 10px aqua, 0 0 20px aqua; /* Efek neon */
+  background: none; /* Tidak ada background */
+  border: 2px solid aqua; /* Border neon */
+  padding: 10px 20px; /* Ukuran padding */
+  border-radius: 10px; /* Sudut membulat */
+  cursor: pointer;
+}
+
+/* Efek hover tombol neon */
+button#startButton:hover {
+  color: white; /* Warna teks saat hover */
+  box-shadow: 0 0 20px aqua, 0 0 40px aqua, 0 0 60px aqua;
+  text-shadow: 0 0 15px aqua, 0 0 30px aqua;
+  transform: scale(1.05);
+}
+
+/* Efek klik tombol neon */
+button#startButton:active {
+  box-shadow: 0 0 30px aqua, 0 0 50px aqua, 0 0 70px aqua;
+  text-shadow: 0 0 20px aqua, 0 0 40px aqua;
+  transform: scale(0.95);
+}
+
+/* Kontainer canvas untuk animasi */
+#heart {
+  display: none; /* Awalnya disembunyikan */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
